@@ -1,7 +1,5 @@
 # Django FAQ Project
 
-# Django FAQ Project
-
 ## Introduction
 FAQ App is a robust application designed to efficiently manage frequently asked questions (FAQs). Built with Django and Django REST Framework, it provides an intuitive system for storing, retrieving, and managing FAQ content. This application supports multilingual functionality, allowing users to access FAQs in multiple languages. It integrates `django-ckeditor` for rich text formatting, Redis for optimized caching, and `googletrans` for seamless automatic translations. With a well-defined REST API, it ensures smooth communication and easy integration with frontend applications.
 
