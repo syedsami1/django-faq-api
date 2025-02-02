@@ -1,6 +1,9 @@
 # Django FAQ Project
 
-This is a simple FAQ system built with Django, Django REST Framework, and django-ckeditor. It supports multilingual content, caching with Redis, and automatic translations using googletrans.
+# Django FAQ Project
+
+## Introduction
+FAQ App is a robust application designed to efficiently manage frequently asked questions (FAQs). Built with Django and Django REST Framework, it provides an intuitive system for storing, retrieving, and managing FAQ content. This application supports multilingual functionality, allowing users to access FAQs in multiple languages. It integrates `django-ckeditor` for rich text formatting, Redis for optimized caching, and `googletrans` for seamless automatic translations. With a well-defined REST API, it ensures smooth communication and easy integration with frontend applications.
 
 ## Features
 
@@ -12,9 +15,41 @@ This is a simple FAQ system built with Django, Django REST Framework, and django
 - Unit tests using pytest.
 
 ## Assumptions
-- googletrans is used for translations .
+- googletrans is used for translations.
 - SQLite is the default database, but you can switch to PostgreSQL or MySQL.
 - Redis should be running locally on port 6379.
+
+## Project Structure
+```
+django-faq-project/
+│── config/
+│   │── __init__.py
+│   │── settings.py
+│   │── urls.py
+│   │── asgi.py
+│   │── wsgi.py
+│
+│── faq/
+│   │── migrations/
+│   │── tests/
+│   │   │── test_api.py
+│   │   │── test_models.py
+│   │── __init__.py
+│   │── admin.py
+│   │── apps.py
+│   │── models.py
+│   │── serializers.py
+│   │── urls.py
+│   │── views.py
+│
+│── venv/
+│── .env
+│── .gitignore
+│── db.sqlite3
+│── manage.py
+│── README.md
+│── requirements.txt
+```
 
 ## Setup
 
@@ -27,7 +62,8 @@ cd django-faq-project
 ### Virtual environment
 ```bash
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate 
+
 ```
 
 ### Install dependencies
@@ -84,6 +120,3 @@ git push origin main
 ```bash
 pytest
 ```
-
-
-
